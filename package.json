@@ -14,7 +14,8 @@
     "reason-react": "0.5.3"
   },
   "devDependencies": {
-    "bs-platform": "4.0.18"
+    "bs-platform": "4.0.18",
+    "resize-observer-polyfill": "1.5.1"
   },
   "scripts": {
     "start": "react-scripts start",

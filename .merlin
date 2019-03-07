@@ -13,6 +13,4 @@ S src
 B lib/bs/src
 S src/styles
 B lib/bs/src/styles
-S src/MooxRn
-B lib/bs/src/MooxRn
 ####BSB GENERATED: NO EDIT}

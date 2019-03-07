@@ -5,17 +5,11 @@ var Block = require("bs-platform/lib/js/block.js");
 var Style$BsReactNative = require("bs-react-native/src/style.js");
 var StyleSheet$BsReactNative = require("bs-react-native/src/styleSheet.js");
 
+var code = {
+  fontFamily: "monospace"
+};
+
 var styles = StyleSheet$BsReactNative.create({
-      container: Style$BsReactNative.style(/* :: */[
-            Style$BsReactNative.flex(1),
-            /* :: */[
-              Style$BsReactNative.justifyContent(/* Center */2),
-              /* :: */[
-                Style$BsReactNative.alignItems(/* Center */2),
-                /* [] */0
-              ]
-            ]
-          ]),
       app: Style$BsReactNative.style(/* :: */[
             Style$BsReactNative.marginHorizontal(/* Auto */0),
             /* :: */[
@@ -34,9 +28,9 @@ var styles = StyleSheet$BsReactNative.create({
       title: Style$BsReactNative.style(/* :: */[
             Style$BsReactNative.fontWeight(/* Bold */737455525),
             /* :: */[
-              Style$BsReactNative.fontSize(/* Float */Block.__(0, [1.5])),
+              Style$BsReactNative.fontSize(/* Float */Block.__(0, [24])),
               /* :: */[
-                Style$BsReactNative.marginVertical(/* Pt */Block.__(0, [1])),
+                Style$BsReactNative.marginVertical(/* Pt */Block.__(0, [16])),
                 /* :: */[
                   Style$BsReactNative.textAlign(/* Center */3),
                   /* [] */0
@@ -45,11 +39,11 @@ var styles = StyleSheet$BsReactNative.create({
             ]
           ]),
       text: Style$BsReactNative.style(/* :: */[
-            Style$BsReactNative.lineHeight(1.5),
+            Style$BsReactNative.lineHeight(24),
             /* :: */[
-              Style$BsReactNative.fontSize(/* Float */Block.__(0, [1.125])),
+              Style$BsReactNative.fontSize(/* Float */Block.__(0, [18])),
               /* :: */[
-                Style$BsReactNative.marginVertical(/* Pt */Block.__(0, [1])),
+                Style$BsReactNative.marginVertical(/* Pt */Block.__(0, [16])),
                 /* :: */[
                   Style$BsReactNative.textAlign(/* Center */3),
                   /* [] */0
@@ -67,5 +61,6 @@ var styles = StyleSheet$BsReactNative.create({
           ])
     });
 
+exports.code = code;
 exports.styles = styles;
 /* styles Not a pure module */
