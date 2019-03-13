@@ -18,19 +18,16 @@ let make = (_children) => {
         </View>
         <Text style=styles##text>
           "This is an example of an app built with "->s
-          <Text> <a href="https://github.com/facebook/create-react-app">
-            "Create React App"->s </a>
-          </Text>
+          <Link href="https://github.com/facebook/create-react-app"
+            value="Create React App" />
           " and "->s
-          <Text style=styles##link> <a href="https://github.com/necolas/react-native-web">
-            "React Native for Web"->s</a>
-          </Text>
+          <Link href="https://github.com/necolas/react-native-web" value=
+            "React Native for Web"/>
         </Text>
         <Text style=styles##text>
           "To get started, edit "->s
-          <Text style=styles##link> <a style=Styles.code href="https://codesandbox.io/s/q4qymyp2l6/">
-            "src/App.js"->s </a>
-          </Text>
+          <Link style=styles##code href="https://codesandbox.io/s/q4qymyp2l6/"
+            value="src/App.js" />
           ". "->s
         </Text>
         <Button onPress={() => Js.log("Example button pressed")} title="Example button" />
