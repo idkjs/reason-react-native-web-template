@@ -18,7 +18,7 @@ function Link(Props) {
       ]
     ] : Styles.styles.link;
   return React.createElement(ReactNative.Text, {
-              onPress: (function (param) {
+              onPress: (function (_e) {
                   ReactNative.Linking.openURL(href).then((function (param) {
                           return Promise.resolve((console.log("opened " + href), /* () */0));
                         }));

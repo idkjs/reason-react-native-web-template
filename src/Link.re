@@ -7,10 +7,8 @@ let make = (~href: string, ~style=?, ~value: string) => {
     | None => Styles.styles##link
     | Some(style) => Style.list([Styles.styles##link, style])
     };
-  // let linkStyle = style ?
-  // Style.concat([Styles.styles##link, style]) : Styles.styles##link;
   <Text
-    onPress={() =>
+    onPress={_e =>
       Js.Promise.(
         Linking.openURL(href)
         |> then_(_ => Js.log("opened " ++ href) |> resolve)
