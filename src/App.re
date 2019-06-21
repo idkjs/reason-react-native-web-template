@@ -1,16 +1,22 @@
-open BsReactNative;
+open ReactNative;
 open Utils;
 open Styles;
-let component = ReasonReact.statelessComponent("App");
-
-let make = (_children) => {
-  ...component,
-  render: (_self) =>
+        // <View style=styles##header>
+        //   <Image
+        //     accessibilityLabel="React logo"
+        //     source=Image.Source.fromRequired(Packager.require("./assets/logoUri.svg"))
+        //     resizeMode=`contain
+        //     style=styles##logo
+        //   />
+        //   <Text style=styles##title> "React Native for Web"->s </Text>
+        // </View>
+[@react.component]
+let make = () =>
       <View style=styles##app>
         <View style=styles##header>
           <Image
             accessibilityLabel="React logo"
-            source=(`Required(Packager.require("./assets/logoUri.svg")))
+            source=Image.Source.fromRequired(Packager.require("./assets/logoUri.svg"))
             resizeMode=`contain
             style=styles##logo
           />
@@ -30,9 +36,5 @@ let make = (_children) => {
             value="src/App.js" />
           ". "->s
         </Text>
-        <Button onPress={() => Js.log("Example button pressed")} title="Example button" />
-      </View>
-};
-
-let default =
-ReasonReact.wrapReasonForJs(~component, jsProps => make(jsProps##children));
+        <Button onPress={_e => Js.log("Example button pressed")} title="Example button" />
+      </View>;

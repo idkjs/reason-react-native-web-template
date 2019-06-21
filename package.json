@@ -5,16 +5,16 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "bs-react-native": "0.10.0",
-    "react": "16.8.4",
-    "react-art": "16.8.4",
-    "react-dom": "16.8.4",
-    "react-native-web": "0.11.0",
+    "react": "16.8.6",
+    "react-art": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-native-web": "0.11.4",
     "react-scripts": "2.1.8",
-    "reason-react": "0.6.0"
+    "reason-react": "0.7.0",
+    "reason-react-native": "0.60.0"
   },
   "devDependencies": {
-    "bs-platform": "4.0.18",
+    "bs-platform": "5.0.4",
     "resize-observer-polyfill": "1.5.1"
   },
   "scripts": {
