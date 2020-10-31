@@ -5,7 +5,7 @@ let make = (~href: string, ~style=?, ~value: string) => {
   let linkStyle =
     switch (style) {
     | None => Styles.styles##link
-    | Some(style) => Style.list([Styles.styles##link, style])
+    | Some(style) => Style.array([|Styles.styles##link, style|])
     };
   <Text
     onPress={_e =>
